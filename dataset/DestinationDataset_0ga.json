@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_0ga",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Orc",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/fourth_coffee",
+				"fileSystem": "datalake"
+			},
+			"orcCompressionCodec": "none",
+			"enablePhysicalSchema": true
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
